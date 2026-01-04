@@ -1,0 +1,25 @@
+2026-01-04T19:42:26.100+05:45  INFO 21920 --- [RatingService] [main] c.lcwd.rating.RatingServiceApplication   : Starting RatingServiceApplication using Java 21.0.8 with PID 21920 (D:\Java_Micro_Services\RatingService\RatingService\target\classes started by ASUS in D:\Java_Micro_Services\UserService\UserService)
+2026-01-04T19:42:26.112+05:45  INFO 21920 --- [RatingService] [main] c.lcwd.rating.RatingServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-04T19:42:26.758+05:45  INFO 21920 --- [RatingService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-04T19:42:26.820+05:45  INFO 21920 --- [RatingService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2026-01-04T19:42:27.411+05:45  INFO 21920 --- [RatingService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-01-04T19:42:27.431+05:45  INFO 21920 --- [RatingService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-04T19:42:27.431+05:45  INFO 21920 --- [RatingService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-01-04T19:42:27.513+05:45  INFO 21920 --- [RatingService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-04T19:42:27.513+05:45  INFO 21920 --- [RatingService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1349 ms
+2026-01-04T19:42:27.707+05:45  INFO 21920 --- [RatingService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-04T19:42:27.772+05:45  INFO 21920 --- [RatingService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-01-04T19:42:27.800+05:45  INFO 21920 --- [RatingService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-04T19:42:28.026+05:45  INFO 21920 --- [RatingService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-04T19:42:28.049+05:45  INFO 21920 --- [RatingService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-04T19:42:28.195+05:45  INFO 21920 --- [RatingService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25218a4d
+2026-01-04T19:42:28.196+05:45  INFO 21920 --- [RatingService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-04T19:42:28.245+05:45  WARN 21920 --- [RatingService] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-04T19:42:28.905+05:45  INFO 21920 --- [RatingService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-04T19:42:28.945+05:45  INFO 21920 --- [RatingService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-04T19:42:29.273+05:45  WARN 21920 --- [RatingService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-04T19:42:29.751+05:45  INFO 21920 --- [RatingService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path ''
+2026-01-04T19:42:29.763+05:45  INFO 21920 --- [RatingService] [main] c.lcwd.rating.RatingServiceApplication   : Started RatingServiceApplication in 4.097 seconds (process running for 4.556)
+2026-01-04T19:42:34.699+05:45  INFO 21920 --- [RatingService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-04T19:42:34.701+05:45  INFO 21920 --- [RatingService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-04T19:42:34.708+05:45  INFO 21920 --- [RatingService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

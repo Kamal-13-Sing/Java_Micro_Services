@@ -1,0 +1,51 @@
+# ------------------------------ Server Configuration ------------------------------
+server:
+  address: 0.0.0.0
+  port: 8082
+
+spring:
+  application:
+    name: hotelservice
+
+  web:
+    resources:
+      static-locations: classpath:/static/
+
+  mvc:
+    static-path-pattern: /**
+
+  # --------------------------- File Upload Configuration ---------------------------
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  # --------------------------- Database Connectivity (MySQL) ------------------------
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservices?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # ------------------------- JPA / Hibernate Configuration -------------------------
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update   # use validate in production
+    show-sql: true
+
+# ----------------------------- SQL & Hibernate Logging -----------------------------
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
+    org.springframework.jdbc.core: DEBUG
+
+  file:
+    name: ../hotelservice_logs/hotelservice-application.log
+
+# ----------------------------- Custom Project Paths --------------------------------
+project:
+  image: ../hotelservice_images/images
+  countryFlag: ../hotelservice_images/country_flag_images

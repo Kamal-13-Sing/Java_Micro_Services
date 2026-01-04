@@ -1,0 +1,25 @@
+2026-01-04T19:43:00.391+05:45  INFO 16472 --- [UserService] [main] c.l.user.service.UserServiceApplication  : Starting UserServiceApplication using Java 21.0.8 with PID 16472 (D:\Java_Micro_Services\UserService\UserService\target\classes started by ASUS in D:\Java_Micro_Services\UserService\UserService)
+2026-01-04T19:43:00.401+05:45  INFO 16472 --- [UserService] [main] c.l.user.service.UserServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-01-04T19:43:00.957+05:45  INFO 16472 --- [UserService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-04T19:43:01.013+05:45  INFO 16472 --- [UserService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2026-01-04T19:43:01.641+05:45  INFO 16472 --- [UserService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-01-04T19:43:01.652+05:45  INFO 16472 --- [UserService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-04T19:43:01.652+05:45  INFO 16472 --- [UserService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-01-04T19:43:01.714+05:45  INFO 16472 --- [UserService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-04T19:43:01.714+05:45  INFO 16472 --- [UserService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1266 ms
+2026-01-04T19:43:01.928+05:45  INFO 16472 --- [UserService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-04T19:43:01.974+05:45  INFO 16472 --- [UserService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-01-04T19:43:02.001+05:45  INFO 16472 --- [UserService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-04T19:43:02.167+05:45  INFO 16472 --- [UserService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-04T19:43:02.185+05:45  INFO 16472 --- [UserService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-04T19:43:02.371+05:45  INFO 16472 --- [UserService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27df5806
+2026-01-04T19:43:02.372+05:45  INFO 16472 --- [UserService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-04T19:43:02.399+05:45  WARN 16472 --- [UserService] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-04T19:43:03.041+05:45  INFO 16472 --- [UserService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-04T19:43:03.081+05:45  INFO 16472 --- [UserService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-04T19:43:03.351+05:45  WARN 16472 --- [UserService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-04T19:43:03.694+05:45  INFO 16472 --- [UserService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-01-04T19:43:03.705+05:45  INFO 16472 --- [UserService] [main] c.l.user.service.UserServiceApplication  : Started UserServiceApplication in 3.735 seconds (process running for 4.052)
+2026-01-04T19:43:05.638+05:45  INFO 16472 --- [UserService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-04T19:43:05.640+05:45  INFO 16472 --- [UserService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-04T19:43:05.642+05:45  INFO 16472 --- [UserService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
