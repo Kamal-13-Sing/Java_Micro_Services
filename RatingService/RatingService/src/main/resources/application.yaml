@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: ratingservice
+    name: RATING-SERVICE
 
   web:
     resources:
@@ -34,6 +34,17 @@ spring:
     hibernate:
       ddl-auto: update   # use validate in production
     show-sql: true
+
+# ------------------------------ Eureka Configuration ------------------------------
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
 
 # ----------------------------- SQL & Hibernate Logging -----------------------------
 logging:

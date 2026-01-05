@@ -1,94 +1,38 @@
-2026-01-03T16:14:04.300+05:45  INFO 20872 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : Starting RatingServiceApplicationTests using Java 21.0.8 with PID 20872 (started by ASUS in D:\Java_Micro_Services\RatingService\RatingService)
-2026-01-03T16:14:04.302+05:45  INFO 20872 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2026-01-03T16:14:04.906+05:45  INFO 20872 --- [RatingService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-03T16:14:04.957+05:45  INFO 20872 --- [RatingService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
-2026-01-03T16:14:05.322+05:45  INFO 20872 --- [RatingService] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-01-03T16:14:05.366+05:45  INFO 20872 --- [RatingService] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-01-03T16:14:05.869+05:45  INFO 20872 --- [RatingService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-03T16:14:05.892+05:45  INFO 20872 --- [RatingService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-01-03T16:14:06.029+05:45  INFO 20872 --- [RatingService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72b10258
-2026-01-03T16:14:06.031+05:45  INFO 20872 --- [RatingService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-01-03T16:14:06.072+05:45  WARN 20872 --- [RatingService] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-01-03T16:14:06.088+05:45  INFO 20872 --- [RatingService] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/microservices?useSSL=false&serverTimezone=UTC]
-	Database driver: MySQL Connector/J
-	Database dialect: MySQLDialect
-	Database version: 8.0.37
-	Default catalog/schema: microservices/undefined
-	Autocommit mode: undefined/unknown
-	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-01-03T16:14:06.695+05:45  INFO 20872 --- [RatingService] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-03T16:14:06.763+05:45 DEBUG 20872 --- [RatingService] [main] org.hibernate.SQL                        : create table ratings (rating_id varchar(255) not null, feedback varchar(255), hotel_id varchar(255), ratings integer not null, user_id varchar(255), primary key (rating_id)) engine=InnoDB
-2026-01-03T16:14:06.947+05:45  INFO 20872 --- [RatingService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-03T16:14:07.057+05:45  INFO 20872 --- [RatingService] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-03T16:14:07.251+05:45  WARN 20872 --- [RatingService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-03T16:14:07.669+05:45  INFO 20872 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : Started RatingServiceApplicationTests in 3.665 seconds (process running for 4.666)
-2026-01-03T16:14:08.085+05:45  INFO 20872 --- [RatingService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-01-03T16:14:08.087+05:45  INFO 20872 --- [RatingService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-01-03T16:14:08.094+05:45  INFO 20872 --- [RatingService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-01-03T16:18:54.699+05:45  INFO 2220 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : Starting RatingServiceApplicationTests using Java 21.0.8 with PID 2220 (started by ASUS in D:\Java_Micro_Services\RatingService\RatingService)
-2026-01-03T16:18:54.700+05:45  INFO 2220 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2026-01-03T16:18:55.287+05:45  INFO 2220 --- [RatingService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-03T16:18:55.330+05:45  INFO 2220 --- [RatingService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
-2026-01-03T16:18:55.680+05:45  INFO 2220 --- [RatingService] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-01-03T16:18:55.724+05:45  INFO 2220 --- [RatingService] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-01-03T16:18:56.199+05:45  INFO 2220 --- [RatingService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-03T16:18:56.224+05:45  INFO 2220 --- [RatingService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-01-03T16:18:56.364+05:45  INFO 2220 --- [RatingService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56d5460f
-2026-01-03T16:18:56.366+05:45  INFO 2220 --- [RatingService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-01-03T16:18:56.404+05:45  WARN 2220 --- [RatingService] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-01-03T16:18:56.420+05:45  INFO 2220 --- [RatingService] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/microservices?useSSL=false&serverTimezone=UTC]
-	Database driver: MySQL Connector/J
-	Database dialect: MySQLDialect
-	Database version: 8.0.37
-	Default catalog/schema: microservices/undefined
-	Autocommit mode: undefined/unknown
-	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-01-03T16:18:57.026+05:45  INFO 2220 --- [RatingService] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-03T16:18:57.083+05:45  INFO 2220 --- [RatingService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-03T16:18:57.180+05:45  INFO 2220 --- [RatingService] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-03T16:18:57.405+05:45  WARN 2220 --- [RatingService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-03T16:18:57.780+05:45  INFO 2220 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : Started RatingServiceApplicationTests in 3.382 seconds (process running for 4.354)
-2026-01-03T16:18:58.165+05:45  INFO 2220 --- [RatingService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-01-03T16:18:58.170+05:45  INFO 2220 --- [RatingService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-01-03T16:18:58.180+05:45  INFO 2220 --- [RatingService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-01-03T16:19:05.704+05:45  INFO 20028 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : Starting RatingServiceApplicationTests using Java 21.0.8 with PID 20028 (started by ASUS in D:\Java_Micro_Services\RatingService\RatingService)
-2026-01-03T16:19:05.705+05:45  INFO 20028 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2026-01-03T16:19:06.328+05:45  INFO 20028 --- [RatingService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-03T16:19:06.372+05:45  INFO 20028 --- [RatingService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
-2026-01-03T16:19:06.774+05:45  INFO 20028 --- [RatingService] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-01-03T16:19:06.824+05:45  INFO 20028 --- [RatingService] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-01-03T16:19:07.337+05:45  INFO 20028 --- [RatingService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-03T16:19:07.361+05:45  INFO 20028 --- [RatingService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-01-03T16:19:07.510+05:45  INFO 20028 --- [RatingService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c98fe6f
-2026-01-03T16:19:07.511+05:45  INFO 20028 --- [RatingService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-01-03T16:19:07.554+05:45  WARN 20028 --- [RatingService] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-01-03T16:19:07.570+05:45  INFO 20028 --- [RatingService] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/microservices?useSSL=false&serverTimezone=UTC]
-	Database driver: MySQL Connector/J
-	Database dialect: MySQLDialect
-	Database version: 8.0.37
-	Default catalog/schema: microservices/undefined
-	Autocommit mode: undefined/unknown
-	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-01-03T16:19:08.178+05:45  INFO 20028 --- [RatingService] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-03T16:19:08.221+05:45  INFO 20028 --- [RatingService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-03T16:19:08.306+05:45  INFO 20028 --- [RatingService] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-03T16:19:08.571+05:45  WARN 20028 --- [RatingService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-03T16:19:09.010+05:45  INFO 20028 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : Started RatingServiceApplicationTests in 3.605 seconds (process running for 4.67)
-2026-01-03T16:19:09.386+05:45  INFO 20028 --- [RatingService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-01-03T16:19:09.396+05:45  INFO 20028 --- [RatingService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-01-03T16:19:09.406+05:45  INFO 20028 --- [RatingService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-04T20:02:50.497+05:45  INFO 19408 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : Starting RatingServiceApplicationTests using Java 21.0.8 with PID 19408 (started by ASUS in D:\Java_Micro_Services\RatingService\RatingService)
+2026-01-04T20:02:50.504+05:45  INFO 19408 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-01-04T20:02:51.156+05:45  INFO 19408 --- [RatingService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-04T20:02:51.201+05:45  INFO 19408 --- [RatingService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2026-01-04T20:02:51.657+05:45  INFO 19408 --- [RatingService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-04T20:02:51.697+05:45  INFO 19408 --- [RatingService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-01-04T20:02:51.717+05:45  INFO 19408 --- [RatingService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-04T20:02:51.933+05:45  INFO 19408 --- [RatingService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-04T20:02:51.962+05:45  INFO 19408 --- [RatingService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-04T20:02:52.133+05:45  INFO 19408 --- [RatingService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f3b13d0
+2026-01-04T20:02:52.135+05:45  INFO 19408 --- [RatingService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-04T20:02:52.175+05:45  WARN 19408 --- [RatingService] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-04T20:02:52.734+05:45  INFO 19408 --- [RatingService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-04T20:02:52.766+05:45  INFO 19408 --- [RatingService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-04T20:02:53.354+05:45  WARN 19408 --- [RatingService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-04T20:02:53.756+05:45  INFO 19408 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : Started RatingServiceApplicationTests in 3.555 seconds (process running for 4.288)
+2026-01-04T20:02:54.301+05:45  INFO 19408 --- [RatingService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-04T20:02:54.303+05:45  INFO 19408 --- [RatingService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-04T20:02:54.310+05:45  INFO 19408 --- [RatingService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-04T20:03:02.375+05:45  INFO 5920 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : Starting RatingServiceApplicationTests using Java 21.0.8 with PID 5920 (started by ASUS in D:\Java_Micro_Services\RatingService\RatingService)
+2026-01-04T20:03:02.377+05:45  INFO 5920 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-01-04T20:03:02.980+05:45  INFO 5920 --- [RatingService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-04T20:03:03.026+05:45  INFO 5920 --- [RatingService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2026-01-04T20:03:03.429+05:45  INFO 5920 --- [RatingService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-04T20:03:03.472+05:45  INFO 5920 --- [RatingService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-01-04T20:03:03.494+05:45  INFO 5920 --- [RatingService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-04T20:03:03.690+05:45  INFO 5920 --- [RatingService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-04T20:03:03.736+05:45  INFO 5920 --- [RatingService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-04T20:03:03.897+05:45  INFO 5920 --- [RatingService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11148dc2
+2026-01-04T20:03:03.898+05:45  INFO 5920 --- [RatingService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-04T20:03:03.940+05:45  WARN 5920 --- [RatingService] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-04T20:03:04.462+05:45  INFO 5920 --- [RatingService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-04T20:03:04.496+05:45  INFO 5920 --- [RatingService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-04T20:03:04.987+05:45  WARN 5920 --- [RatingService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-04T20:03:05.427+05:45  INFO 5920 --- [RatingService] [main] c.l.r.RatingServiceApplicationTests      : Started RatingServiceApplicationTests in 3.33 seconds (process running for 4.048)
+2026-01-04T20:03:05.884+05:45  INFO 5920 --- [RatingService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-04T20:03:05.889+05:45  INFO 5920 --- [RatingService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-04T20:03:05.899+05:45  INFO 5920 --- [RatingService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
