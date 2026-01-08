@@ -1,0 +1,64 @@
+2026-01-08T17:41:03.177+05:45  INFO 11324 --- [HotelService] [main] com.lcwd.hotel.HotelServiceApplication   : Starting HotelServiceApplication using Java 21.0.8 with PID 11324 (D:\Java_Micro_Services\HotelService\HotelService\target\classes started by ASUS in D:\Java_Micro_Services\UserService\UserService)
+2026-01-08T17:41:03.192+05:45  INFO 11324 --- [HotelService] [main] com.lcwd.hotel.HotelServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-08T17:41:04.056+05:45  INFO 11324 --- [HotelService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-08T17:41:04.195+05:45  INFO 11324 --- [HotelService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 1 JPA repository interface.
+2026-01-08T17:41:04.465+05:45  INFO 11324 --- [HotelService] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d02096da-d398-3b5f-9875-45dae3e239d1
+2026-01-08T17:41:04.677+05:45  WARN 11324 --- [HotelService] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-01-08T17:41:04.681+05:45  WARN 11324 --- [HotelService] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-01-08T17:41:05.218+05:45  INFO 11324 --- [HotelService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-01-08T17:41:05.257+05:45  INFO 11324 --- [HotelService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-08T17:41:05.258+05:45  INFO 11324 --- [HotelService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-01-08T17:41:05.371+05:45  INFO 11324 --- [HotelService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-08T17:41:05.371+05:45  INFO 11324 --- [HotelService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2104 ms
+2026-01-08T17:41:05.658+05:45  INFO 11324 --- [HotelService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-08T17:41:05.746+05:45  INFO 11324 --- [HotelService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-01-08T17:41:05.781+05:45  INFO 11324 --- [HotelService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-08T17:41:06.036+05:45  INFO 11324 --- [HotelService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-08T17:41:06.064+05:45  INFO 11324 --- [HotelService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-08T17:41:06.309+05:45  INFO 11324 --- [HotelService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@603d25db
+2026-01-08T17:41:06.310+05:45  INFO 11324 --- [HotelService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-08T17:41:06.360+05:45  WARN 11324 --- [HotelService] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-08T17:41:07.108+05:45  INFO 11324 --- [HotelService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-08T17:41:07.160+05:45  INFO 11324 --- [HotelService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-08T17:41:07.403+05:45  WARN 11324 --- [HotelService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-08T17:41:09.039+05:45  INFO 11324 --- [HotelService] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-01-08T17:41:10.080+05:45  INFO 11324 --- [HotelService] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-01-08T17:41:10.107+05:45  INFO 11324 --- [HotelService] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-01-08T17:41:10.177+05:45  WARN 11324 --- [HotelService] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-08T17:41:10.205+05:45  INFO 11324 --- [HotelService] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-08T17:41:10.339+05:45  INFO 11324 --- [HotelService] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-08T17:41:10.346+05:45  INFO 11324 --- [HotelService] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-08T17:41:10.363+05:45  INFO 11324 --- [HotelService] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-08T17:41:10.363+05:45  INFO 11324 --- [HotelService] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-08T17:41:10.363+05:45  INFO 11324 --- [HotelService] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-08T17:41:10.363+05:45  INFO 11324 --- [HotelService] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-08T17:41:10.364+05:45  INFO 11324 --- [HotelService] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-08T17:41:10.364+05:45  INFO 11324 --- [HotelService] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-01-08T17:41:10.364+05:45  INFO 11324 --- [HotelService] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-08T17:41:10.897+05:45  INFO 11324 --- [HotelService] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-08T17:41:10.898+05:45  INFO 11324 --- [HotelService] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-01-08T17:41:10.901+05:45  INFO 11324 --- [HotelService] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-08T17:41:10.907+05:45  INFO 11324 --- [HotelService] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1767873370905 with initial instances count: 0
+2026-01-08T17:41:10.912+05:45  INFO 11324 --- [HotelService] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HOTELSERVICE with eureka with status UP
+2026-01-08T17:41:10.914+05:45  INFO 11324 --- [HotelService] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1767873370914, current=UP, previous=STARTING]
+2026-01-08T17:41:10.916+05:45  INFO 11324 --- [HotelService] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTELSERVICE/localhost:HotelService:8082: registering service...
+2026-01-08T17:41:10.964+05:45  INFO 11324 --- [HotelService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2026-01-08T17:41:10.965+05:45  INFO 11324 --- [HotelService] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-01-08T17:41:11.041+05:45  INFO 11324 --- [HotelService] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTELSERVICE/localhost:HotelService:8082 - registration status: 204
+2026-01-08T17:41:11.980+05:45  INFO 11324 --- [HotelService] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-01-08T17:41:11.991+05:45  INFO 11324 --- [HotelService] [main] com.lcwd.hotel.HotelServiceApplication   : Started HotelServiceApplication in 10.336 seconds (process running for 10.748)
+2026-01-08T17:41:40.909+05:45  INFO 11324 --- [HotelService] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-08T17:41:40.910+05:45  INFO 11324 --- [HotelService] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-08T17:41:40.910+05:45  INFO 11324 --- [HotelService] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-08T17:41:40.911+05:45  INFO 11324 --- [HotelService] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-08T17:41:40.911+05:45  INFO 11324 --- [HotelService] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-08T17:41:40.912+05:45  INFO 11324 --- [HotelService] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-01-08T17:41:40.913+05:45  INFO 11324 --- [HotelService] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-08T17:41:40.936+05:45  INFO 11324 --- [HotelService] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-08T17:46:10.380+05:45  INFO 11324 --- [HotelService] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-08T17:51:10.379+05:45  INFO 11324 --- [HotelService] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-08T17:56:10.382+05:45  INFO 11324 --- [HotelService] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-08T18:01:10.387+05:45  INFO 11324 --- [HotelService] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-08T18:06:10.390+05:45  INFO 11324 --- [HotelService] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-08T18:11:10.401+05:45  INFO 11324 --- [HotelService] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-08T18:16:10.406+05:45  INFO 11324 --- [HotelService] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
