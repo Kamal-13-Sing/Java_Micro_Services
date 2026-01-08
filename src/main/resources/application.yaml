@@ -1,67 +1,64 @@
-
 # ------------------------------ Server Configuration ------------------------------
 server:
   address: 0.0.0.0
   port: 8081
 
+# ------------------------------ Spring Configuration ------------------------------
 spring:
   application:
-    name: UserService
+    name: USER-SERVICE
+
   web:
     resources:
       static-locations: classpath:/static/
+
   mvc:
     static-path-pattern: /**
 
-  #--------------------------- file size configuration --------------------
+  # --------------------------- File Upload Configuration ---------------------------
   servlet:
     multipart:
       enabled: true
       max-file-size: 10MB
       max-request-size: 10MB
 
-
-
-  # --------------------------- Database Connectivity ---------------------------------
+  # --------------------------- Database Connectivity -------------------------------
   datasource:
     url: jdbc:postgresql://localhost:5432/microservices
     username: postgres
     password: 123456
     driver-class-name: org.postgresql.Driver
 
-  # ------------------------- Database Configuration ----------------------------------
+  # --------------------------- JPA / Hibernate -------------------------------------
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-
-    # For production: Uncomment 'validate' to ensure schema correctness without changes
     hibernate:
       ddl-auto: update
-
-    # Show generated SQL queries in the console
     show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
 
-  # Enable detailed SQL logging for debugging
-  logging:
-    level:
-      org.springframework.jdbc.core: DEBUG
-      org.hibernate.SQL: DEBUG
-      org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+# ------------------------------ Eureka Configuration ------------------------------
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
 
-# ----------------------------- Logging Configuration -------------------------------
-# Development logging configuration
+# ----------------------------- Logging Configuration ------------------------------
 logging:
   file:
     name: ../userservice_logs/userservice-application.log
-  # logging.level.root: DEBUG
+  level:
+    org.springframework.jdbc.core: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
-# Production logging configuration (uncomment for production use)
-# logging:
-#   file:
-#     name: logs/prod-application.log
-#   level:
-#     root: INFO
-
-# Development configuration (Change for production)
+# ----------------------------- Project Custom Paths -------------------------------
 project:
   image: ../userservice_images/images
   countryFlag: ../userservice_images/country_flag_images
