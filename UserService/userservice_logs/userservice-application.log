@@ -1556,3 +1556,109 @@ org.springframework.web.client.HttpServerErrorException$InternalServerError: 500
 2026-01-08T18:08:39.941+05:45  INFO 2420 --- [UserService] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
 2026-01-08T18:08:39.946+05:45  INFO 2420 --- [UserService] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERSERVICE/localhost:UserService:8081 - deregister  status: 200
 2026-01-08T18:08:39.948+05:45  INFO 2420 --- [UserService] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-01-08T18:08:46.203+05:45  INFO 22352 --- [UserService] [main] c.l.user.service.UserServiceApplication  : Starting UserServiceApplication using Java 21.0.8 with PID 22352 (D:\Java_Micro_Services\UserService\UserService\target\classes started by ASUS in D:\Java_Micro_Services\UserService\UserService)
+2026-01-08T18:08:46.204+05:45  INFO 22352 --- [UserService] [main] c.l.user.service.UserServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-01-08T18:08:47.002+05:45  INFO 22352 --- [UserService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-08T18:08:47.117+05:45  INFO 22352 --- [UserService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 1 JPA repository interface.
+2026-01-08T18:08:47.370+05:45  INFO 22352 --- [UserService] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=44ae4137-7c54-37fa-bf54-079b29b3620b
+2026-01-08T18:08:47.504+05:45  WARN 22352 --- [UserService] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-01-08T18:08:47.507+05:45  WARN 22352 --- [UserService] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-01-08T18:08:47.852+05:45  INFO 22352 --- [UserService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-01-08T18:08:47.872+05:45  INFO 22352 --- [UserService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-08T18:08:47.872+05:45  INFO 22352 --- [UserService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-01-08T18:08:47.953+05:45  INFO 22352 --- [UserService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-08T18:08:47.953+05:45  INFO 22352 --- [UserService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1692 ms
+2026-01-08T18:08:48.232+05:45  INFO 22352 --- [UserService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-08T18:08:48.334+05:45  INFO 22352 --- [UserService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-01-08T18:08:48.357+05:45  INFO 22352 --- [UserService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-08T18:08:48.550+05:45  INFO 22352 --- [UserService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-08T18:08:48.573+05:45  INFO 22352 --- [UserService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-08T18:08:48.839+05:45  INFO 22352 --- [UserService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5922cff3
+2026-01-08T18:08:48.841+05:45  INFO 22352 --- [UserService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-08T18:08:48.869+05:45  WARN 22352 --- [UserService] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-08T18:08:49.491+05:45  INFO 22352 --- [UserService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-08T18:08:49.524+05:45  INFO 22352 --- [UserService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-08T18:08:49.760+05:45  WARN 22352 --- [UserService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-08T18:08:51.354+05:45  INFO 22352 --- [UserService] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-01-08T18:08:52.394+05:45  INFO 22352 --- [UserService] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-01-08T18:08:52.440+05:45  INFO 22352 --- [UserService] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-01-08T18:08:52.491+05:45  WARN 22352 --- [UserService] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-08T18:08:52.515+05:45  INFO 22352 --- [UserService] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-08T18:08:52.597+05:45  INFO 22352 --- [UserService] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-08T18:08:52.603+05:45  INFO 22352 --- [UserService] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-08T18:08:52.620+05:45  INFO 22352 --- [UserService] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-08T18:08:52.621+05:45  INFO 22352 --- [UserService] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-08T18:08:52.621+05:45  INFO 22352 --- [UserService] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-08T18:08:52.621+05:45  INFO 22352 --- [UserService] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-08T18:08:52.621+05:45  INFO 22352 --- [UserService] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-08T18:08:52.621+05:45  INFO 22352 --- [UserService] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-01-08T18:08:52.621+05:45  INFO 22352 --- [UserService] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-08T18:08:52.939+05:45  INFO 22352 --- [UserService] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-08T18:08:52.942+05:45  INFO 22352 --- [UserService] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-01-08T18:08:52.946+05:45  INFO 22352 --- [UserService] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-08T18:08:52.950+05:45  INFO 22352 --- [UserService] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1767875032949 with initial instances count: 3
+2026-01-08T18:08:52.952+05:45  INFO 22352 --- [UserService] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERSERVICE with eureka with status UP
+2026-01-08T18:08:52.952+05:45  INFO 22352 --- [UserService] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1767875032952, current=UP, previous=STARTING]
+2026-01-08T18:08:52.954+05:45  INFO 22352 --- [UserService] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERSERVICE/localhost:UserService:8081: registering service...
+2026-01-08T18:08:52.972+05:45  INFO 22352 --- [UserService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-01-08T18:08:52.973+05:45  INFO 22352 --- [UserService] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-01-08T18:08:52.988+05:45  INFO 22352 --- [UserService] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERSERVICE/localhost:UserService:8081 - registration status: 204
+2026-01-08T18:08:53.985+05:45  INFO 22352 --- [UserService] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-01-08T18:08:54.001+05:45  INFO 22352 --- [UserService] [main] c.l.user.service.UserServiceApplication  : Started UserServiceApplication in 9.234 seconds (process running for 9.573)
+2026-01-08T18:09:09.078+05:45  INFO 22352 --- [UserService] [http-nio-0.0.0.0-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-08T18:09:09.079+05:45  INFO 22352 --- [UserService] [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-08T18:09:09.079+05:45  INFO 22352 --- [UserService] [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-01-08T18:09:09.157+05:45 DEBUG 22352 --- [UserService] [http-nio-0.0.0.0-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.about,
+        u1_0.email,
+        u1_0.name 
+    from
+        micro_users u1_0 
+    where
+        u1_0.id=?
+2026-01-08T18:09:09.191+05:45  INFO 22352 --- [UserService] [http-nio-0.0.0.0-8081-exec-1] c.l.u.service.services.UserServiceImp    : [{ratingId=d5180a32-cff0-45c6-907b-ba1f08e7c336, userId=65c55d01-dea9-4f83-8489-698a8bf4712d, hotelId=80195c33-1274-472b-8083-f1edd8a88449, ratings=6, feedback=The service of this hotel is not good}, {ratingId=f14cda53-af14-413a-8659-2e05af787df3, userId=65c55d01-dea9-4f83-8489-698a8bf4712d, hotelId=6cd69eec-18df-4667-a8b5-a217f4716fd5, ratings=8, feedback=good hotel and good food}]
+2026-01-08T18:09:33.639+05:45 DEBUG 22352 --- [UserService] [http-nio-0.0.0.0-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.about,
+        u1_0.email,
+        u1_0.name 
+    from
+        micro_users u1_0
+2026-01-08T18:09:43.724+05:45 DEBUG 22352 --- [UserService] [http-nio-0.0.0.0-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.about,
+        u1_0.email,
+        u1_0.name 
+    from
+        micro_users u1_0 
+    where
+        u1_0.id=?
+2026-01-08T18:09:43.732+05:45  INFO 22352 --- [UserService] [http-nio-0.0.0.0-8081-exec-4] c.l.u.service.services.UserServiceImp    : [{ratingId=266b7f6b-bf5e-4371-a989-06e972cf882f, userId=9b4d76a0-bb39-48d4-9a44-639d185cb088, hotelId=80195c33-1274-472b-8083-f1edd8a88449, ratings=4, feedback=The one in not good at all}]
+2026-01-08T18:10:07.409+05:45 DEBUG 22352 --- [UserService] [http-nio-0.0.0.0-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.about,
+        u1_0.email,
+        u1_0.name 
+    from
+        micro_users u1_0 
+    where
+        u1_0.id=?
+2026-01-08T18:10:07.421+05:45  INFO 22352 --- [UserService] [http-nio-0.0.0.0-8081-exec-5] c.l.u.service.services.UserServiceImp    : []
+2026-01-08T18:10:11.356+05:45 DEBUG 22352 --- [UserService] [http-nio-0.0.0.0-8081-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.about,
+        u1_0.email,
+        u1_0.name 
+    from
+        micro_users u1_0 
+    where
+        u1_0.id=?
+2026-01-08T18:10:11.368+05:45  INFO 22352 --- [UserService] [http-nio-0.0.0.0-8081-exec-6] c.l.u.service.services.UserServiceImp    : [{ratingId=266b7f6b-bf5e-4371-a989-06e972cf882f, userId=9b4d76a0-bb39-48d4-9a44-639d185cb088, hotelId=80195c33-1274-472b-8083-f1edd8a88449, ratings=4, feedback=The one in not good at all}]
+2026-01-08T18:13:52.628+05:45  INFO 22352 --- [UserService] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-08T18:18:52.635+05:45  INFO 22352 --- [UserService] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
