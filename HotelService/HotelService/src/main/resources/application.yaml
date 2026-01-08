@@ -46,16 +46,16 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 # ----------------------------- SQL & Hibernate Logging -----------------------------
-logging:
-  level:
-    org.hibernate.SQL: DEBUG
-    org.hibernate.orm.jdbc.bind: TRACE
-    org.springframework.jdbc.core: DEBUG
-
-  file:
-    name: ../hotelservice_logs/hotelservice-application.log
+#logging:
+#  level:
+#    org.hibernate.SQL: DEBUG
+#    org.hibernate.orm.jdbc.bind: TRACE
+#    org.springframework.jdbc.core: DEBUG
+#
+#  file:
+#    name: ../hotelservice_logs/hotelservice-application.log
 
 # ----------------------------- Custom Project Paths --------------------------------
-project:
-  image: ../hotelservice_images/images
-  countryFlag: ../hotelservice_images/country_flag_images
+#project:
+#  image: ../hotelservice_images/images
+#  countryFlag: ../hotelservice_images/country_flag_images

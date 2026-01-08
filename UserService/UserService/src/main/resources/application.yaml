@@ -50,15 +50,15 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 # ----------------------------- Logging Configuration ------------------------------
-logging:
-  file:
-    name: ../userservice_logs/userservice-application.log
-  level:
-    org.springframework.jdbc.core: DEBUG
-    org.hibernate.SQL: DEBUG
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+#logging:
+#  file:
+#    name: ../userservice_logs/userservice-application.log
+#  level:
+#    org.springframework.jdbc.core: DEBUG
+#    org.hibernate.SQL: DEBUG
+#    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
 # ----------------------------- Project Custom Paths -------------------------------
-project:
-  image: ../userservice_images/images
-  countryFlag: ../userservice_images/country_flag_images
+#project:
+#  image: ../userservice_images/images
+#  countryFlag: ../userservice_images/country_flag_images

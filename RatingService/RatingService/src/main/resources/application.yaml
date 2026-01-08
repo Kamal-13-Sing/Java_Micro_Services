@@ -47,16 +47,16 @@ eureka:
 
 
 # ----------------------------- SQL & Hibernate Logging -----------------------------
-logging:
-  level:
-    org.hibernate.SQL: DEBUG
-    org.hibernate.orm.jdbc.bind: TRACE
-    org.springframework.jdbc.core: DEBUG
-
-  file:
-    name: ../ratingservice_logs/ratingservice-application.log
+#logging:
+#  level:
+#    org.hibernate.SQL: DEBUG
+#    org.hibernate.orm.jdbc.bind: TRACE
+#    org.springframework.jdbc.core: DEBUG
+#
+#  file:
+#    name: ../ratingservice_logs/ratingservice-application.log
 
 # ----------------------------- Custom Project Paths --------------------------------
-project:
-  image: ../ratingservice_images/images
-  countryFlag: ../ratingservice_images/country_flag_images
+#project:
+#  image: ../ratingservice_images/images
+#  countryFlag: ../ratingservice_images/country_flag_images
