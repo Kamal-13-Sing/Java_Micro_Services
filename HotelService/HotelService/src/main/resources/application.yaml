@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: HOTEL-SERVICE
+    name: HOTELSERVICE
 
   web:
     resources:

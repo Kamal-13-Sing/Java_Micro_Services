@@ -6,7 +6,7 @@ server:
 # ------------------------------ Spring Configuration ------------------------------
 spring:
   application:
-    name: USER-SERVICE
+    name: USERSERVICE
 
   web:
     resources:
