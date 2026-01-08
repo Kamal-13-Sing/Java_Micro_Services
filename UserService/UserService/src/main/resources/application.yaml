@@ -1,0 +1,64 @@
+# ------------------------------ Server Configuration ------------------------------
+server:
+  address: 0.0.0.0
+  port: 8081
+
+# ------------------------------ Spring Configuration ------------------------------
+spring:
+  application:
+    name: USER-SERVICE
+
+  web:
+    resources:
+      static-locations: classpath:/static/
+
+  mvc:
+    static-path-pattern: /**
+
+  # --------------------------- File Upload Configuration ---------------------------
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  # --------------------------- Database Connectivity -------------------------------
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservices
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+
+  # --------------------------- JPA / Hibernate -------------------------------------
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# ------------------------------ Eureka Configuration ------------------------------
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+# ----------------------------- Logging Configuration ------------------------------
+logging:
+  file:
+    name: ../userservice_logs/userservice-application.log
+  level:
+    org.springframework.jdbc.core: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+# ----------------------------- Project Custom Paths -------------------------------
+project:
+  image: ../userservice_images/images
+  countryFlag: ../userservice_images/country_flag_images
