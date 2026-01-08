@@ -1,0 +1,62 @@
+# ------------------------------ Server Configuration ------------------------------
+server:
+  address: 0.0.0.0
+  port: 8083
+
+spring:
+  application:
+    name: RATING-SERVICE
+
+  web:
+    resources:
+      static-locations: classpath:/static/
+
+  mvc:
+    static-path-pattern: /**
+
+  # --------------------------- File Upload Configuration ---------------------------
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  # --------------------------- Database Connectivity (MySQL) ------------------------
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservices?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # ------------------------- JPA / Hibernate Configuration -------------------------
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update   # use validate in production
+    show-sql: true
+
+# ------------------------------ Eureka Configuration ------------------------------
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+# ----------------------------- SQL & Hibernate Logging -----------------------------
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
+    org.springframework.jdbc.core: DEBUG
+
+  file:
+    name: ../ratingservice_logs/ratingservice-application.log
+
+# ----------------------------- Custom Project Paths --------------------------------
+project:
+  image: ../ratingservice_images/images
+  countryFlag: ../ratingservice_images/country_flag_images
