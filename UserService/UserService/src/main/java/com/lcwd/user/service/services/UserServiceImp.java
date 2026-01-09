@@ -70,6 +70,8 @@ public class UserServiceImp implements UserServices {
 
         //setting value of rating
         user.setRatings(ratingList);
+
+        //return users
         return user;
     }
 }
