@@ -4,6 +4,7 @@ import com.lcwd.user.service.dtos.HotelDto;
 import com.lcwd.user.service.dtos.Rating;
 import com.lcwd.user.service.entities.User;
 import com.lcwd.user.service.exceptions.ResourceNotFoundException;
+import com.lcwd.user.service.external.services.HotelService;
 import com.lcwd.user.service.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -22,6 +23,7 @@ import java.util.UUID;
 public class UserServiceImp implements UserServices {
 
     private final UserRepository userRepository;
+    private final HotelService hotelService;
 
     private final RestTemplate restTemplate;
     private Logger logger = LoggerFactory.getLogger(UserServiceImp.class);
@@ -58,9 +60,13 @@ public class UserServiceImp implements UserServices {
             //api call to hotel service to get the hotel
 
             //http://localhost:8082/hotels/6cd69eec-18df-4667-a8b5-a217f4716fd5
-            ResponseEntity<HotelDto> forEntity = restTemplate.getForEntity("http://HOTELSERVICE/hotels/" + rating.getHotelId(), HotelDto.class);
-            HotelDto hotel = forEntity.getBody();
-            logger.info("response status code: {}", forEntity.getStatusCode());
+//            ResponseEntity<HotelDto> forEntity = restTemplate.getForEntity("http://HOTELSERVICE/hotels/" + rating.getHotelId(), HotelDto.class);
+//            HotelDto hotel = forEntity.getBody();
+//            logger.info("response status code: {}", forEntity.getStatusCode());
+
+            //using feign
+           HotelDto hotel = hotelService.getHotel(rating.getHotelId());
+
 
             //set the hotel to rating
             rating.setHotel(hotel);
